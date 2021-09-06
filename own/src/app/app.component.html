@@ -1,12 +1,14 @@
+<!-- <span *ngIf="showColor">Attribute Change by Using NgClass</span>
+<input type="button" value="Change Color" (click)="changeColor()" />  
 
-  <div class="container">
-  <mat-toolbar style="background-color:maroon; justify-content: space-between;">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <span style="color: mintcream;">My App</span>
-    <span class="example-spacer"></span>
-  </mat-toolbar>
-  <h1 class="welcomnote">You're warm welcome</h1>
-</div>
-<router-outlet></router-outlet>
+
+<h1 [class.red]= "showColor" >Hello World</h1> -->
+
+<!-- <div>  
+  <input type="button" value="{{caption}}" (click)="changeData()"/>  
+  <br />  
+  <h2 *ngIf="showInfo"><span>Demonstrate of Structural Directives - *ngIf</span></h2>  
+</div>  -->
+
+<input type="button" value={{caption}} (click)="showText()">
+<h1 *ngIf="showContent">Hello World</h1>
